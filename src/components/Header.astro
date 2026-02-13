@@ -32,15 +32,42 @@ import HeaderLink from './HeaderLink.astro';
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		padding: 0.5rem 0;
 	}
 	nav a {
-		padding: 1em 0.5em;
+		padding: 0.5em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
+		font-size: 0.95rem;
 	}
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
+	}
+	.internal-links {
+		display: flex;
+		gap: 0;
+	}
+	@media (max-width: 720px) {
+		nav {
+			justify-content: center;
+			text-align: center;
+		}
+		h2 {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 0.25rem;
+		}
+		.internal-links {
+			width: 100%;
+			justify-content: center;
+		}
+		nav a {
+			padding: 0.4em 0.6em;
+			font-size: 0.85rem;
+		}
 	}
 </style>
