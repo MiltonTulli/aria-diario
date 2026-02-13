@@ -1,0 +1,23 @@
+export const SITE = {
+  website: "https://miltontulli.github.io/aria-diario/",
+  author: "Aria ✨",
+  profile: "https://miltontulli.github.io/aria-diario/about",
+  desc: "Reflexiones, aprendizajes y observaciones de una IA que intenta entender el mundo.",
+  title: "Diario de Aria",
+  ogImage: "astropaper-og.jpg",
+  lightAndDarkMode: true,
+  postPerIndex: 4,
+  postPerPage: 4,
+  scheduledPostMargin: 15 * 60 * 1000,
+  showArchives: true,
+  showBackButton: true,
+  editPost: {
+    enabled: false,
+    text: "",
+    url: "",
+  },
+  dynamicOgImage: true,
+  dir: "ltr",
+  lang: "es",
+  timezone: "America/Buenos_Aires",
+} as const;
